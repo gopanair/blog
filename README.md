@@ -1,77 +1,99 @@
-# eleventy-base-blog
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's blog starter
+</h1>
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## Demos
+## 🚀 Quick start
 
-* [Netlify](https://eleventy-base-blog.netlify.com/)
-* [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
+1.  **Create a Gatsby site.**
 
-## Deploy this to your own site
+    Use the Gatsby CLI to create a new site, specifying the blog starter.
 
-These builders are amazing—try them out to get your own Eleventy site in a few clicks!
+    ```shell
+    # create a new Gatsby site using the blog starter
+    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+    ```
 
-* [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-* [Get your own Eleventy web site on ZEIT Now](https://zeit.co/new/project?template=11ty/eleventy-base-blog)
+1.  **Start developing.**
 
-## Getting Started
+    Navigate into your new site’s directory and start it up.
 
-### 1. Clone this Repository
+    ```shell
+    cd my-blog-starter/
+    gatsby develop
+    ```
 
-```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
-```
+1.  **Open the source code and start editing!**
 
+    Your site is now running at `http://localhost:8000`!
 
-### 2. Navigate to the directory
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-```
-cd my-blog-name
-```
+    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
+## 🧐 What's inside?
 
-### 3. Install dependencies
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-```
-npm install
-```
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-### 4. Edit _data/metadata.json
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-### 5. Run Eleventy
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-```
-npx eleventy
-```
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-Or build and host locally for local development
-```
-npx eleventy --serve
-```
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-Or build automatically when a template changes:
-```
-npx eleventy --watch
-```
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-Or in debug mode:
-```
-DEBUG=* npx eleventy
-```
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-### Implementation Notes
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-* `about/index.md` shows how to add a content page.
-* `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
-* Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
-* Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
-	* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
-* The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
-* This example uses three layouts:
-  * `_includes/layouts/base.njk`: the top level HTML structure
-  * `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-  * `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-* `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+12. **`README.md`**: A text file containing useful reference information about your project.
+
+## 🎓 Learning Gatsby
+
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-blog)
+
+<!-- AUTO-GENERATED-CONTENT:END -->
