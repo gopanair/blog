@@ -1,0 +1,15 @@
+{
+  "title": "Disconnected Dots",
+  "url": "https://gnair.us/",
+  "description": "Where I write abouyt things that I ifnd interesting",
+  "feed": {
+    "subtitle": "",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://gnair.us/"
+  },
+  "author": {
+    "name": "Gopakumar Nair",
+    "email": "gopanair@gmail.com"
+  }
+}
