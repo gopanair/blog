@@ -26,13 +26,17 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <div className="container-md mx-auto py-3 flex-1 w-2/3">
+    <div className="flex items-center justify-center h-full">
+    <div className="flex flex-col   w-1/6"></div>
+    <div className="flex flex-col   w-2/3">
       <header>{header}</header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}
         {` blog.gnair.us`}
       </footer>
+    </div>
+    <div className="flex flex-col   w-1/6"></div>
     </div>
   )
 }
