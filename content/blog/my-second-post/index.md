@@ -11,3 +11,13 @@ egg yolk will be less rich."?
 ([Wikipedia Link](https://en.wikipedia.org/wiki/Salted_duck_egg))
 
 Yeah, I didn't either.
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
