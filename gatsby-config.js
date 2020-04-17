@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `DIsconnected Dots`,
+    title: `Disconnected Dots`,
     author: {
       name: `Gopakumar Nair`,
-      summary: `I am an IT professional living in Virginia. This is a where I write about things that I find interesting.`,
+      summary: `I am an IT dude living in Virginia. This is a where I write about things that I find interesting.`,
     },
     description: `A place for me to learn in public.`,
     siteUrl: `https://blog.gnair.us/`,
@@ -69,6 +69,12 @@ module.exports = {
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true
+      }
     },
     `gatsby-plugin-react-helmet`
     // this (optional) plugin enables Progressive Web App + Offline functionality

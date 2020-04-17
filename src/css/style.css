@@ -5,30 +5,33 @@
 @tailwind utilities;
 
 body {
- @apply   px-6 py-10 
+ @apply   text-gray-800 bg-white 
+ 
 }
  
   /* Headers */
-   h1,
-   h2 {
-    @apply text-2xl my-2 font-bold;
+   
+   h1 {
+    @apply text-2xl  font-bold;
   }
-   h3,
+  h3 {
+    @apply text-xl  font-bold;
+  }
    h4,
    h5,
    h6 {
-    @apply text-xl  font-semibold;
+    @apply text-xs mb-1 ;
   }
   /* Links */
   a {
-    @apply text-pink-600;
+    @apply text-pink-800;
   }
   a:hover {
     @apply underline;
   }
   /* Paragraph */
    p {
-    @apply mb-4;
+    @apply mb-3 ;
   }
   /* Lists */
   ul,
@@ -62,6 +65,6 @@ body {
     @apply bg-gray-100;
   }
   table {
-    @apply mb-6;
+   
   }
   /* purgecss end ignore */

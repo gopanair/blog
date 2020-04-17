@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <div >
+    <div className="container-md mx-auto px-4 py-3 flex-1 justify-between">
       <header>{header}</header>
       <main>{children}</main>
       <footer>

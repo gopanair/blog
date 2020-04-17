@@ -18,18 +18,18 @@ const BlogIndex = ({ data, location }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
-            <header class="text-blue-500 hover:text-blue-800" >
+            <header  >
               <h3>
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  <div className="font-semibold text-xl tracking-tight">
+                <Link  to={node.fields.slug}>
+                  <div>
                   {title}
                   </div>
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <h6>{node.frontmatter.date}</h6>
             </header>
             <section>
-              <p className="font-sans text-lg text-gray-800 text-left"
+              <p 
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
