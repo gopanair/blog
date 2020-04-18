@@ -9,7 +9,7 @@
 html { font-family: 'Inter', sans-serif; }
 
 body {
-  @apply  text-gray-800 bg-white;
+  @apply  text-gray-800 bg-orange-100;
 }
 /* Headers */
 
@@ -50,3 +50,4 @@ blockquote {
 }
 
 /* purgecss end ignore */
+
