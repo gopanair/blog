@@ -30,7 +30,7 @@ const Layout = ({ location, title, children }) => {
     <div className="flex items-center justify-center h-full">
      
     <div className="sm:w-0 md:w-1/6 lg:w-1/6 "></div>
-    <div className="sm:w-full sm:b-4 md:w-2/3 lg:w-2/3">
+    <div className="sm:w-full sm:ml-4 sm:mt-4 md:w-2/3 lg:w-2/3">
       <header>{header}</header>
       <main>{children}</main>
       <footer>
