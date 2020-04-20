@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import {Helmet} from "react-helmet";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -27,12 +26,8 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     
-    <div className="container pt-4 px-3 lg:mx-auto lg:pt-4">
-     
-     <Helmet>
-     <meta name="viewport" content="width=device-width"/>
-              
-      </Helmet>
+    <div className="flex flex-col pt-4 px-3 lg:px-64 lg:pt-10">
+         
     
       <header>{header}</header>
       <main>{children}</main>
