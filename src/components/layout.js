@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import {Helmet} from "react-helmet";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -27,18 +27,19 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     
-    <div className="flex items-center justify-center h-full">
+    <div className="container mt-6 mx-auto sm:px-2 sm:pt-2">
      
-    <div className="sm:w-0 md:w-1/6 lg:w-1/6 "></div>
-    <div className="sm:w-full sm:ml-4 sm:mt-4 md:w-2/3 lg:w-2/3">
+     <Helmet>
+     <meta name="viewport" content="width=device-width"/>
+              
+      </Helmet>
+    
       <header>{header}</header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}
         {` blog.gnair.us`}
       </footer>
-    </div>
-    <div className="md:w-1/6 lg:w-1/6 sm:w-0"></div>
     </div>
   )
 }
