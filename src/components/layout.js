@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     
-    <div className="container pt-4 px-2 lg:mx-auto lg:pt-4">
+    <div className="container pt-4 px-3 lg:mx-auto lg:pt-4">
      
      <Helmet>
      <meta name="viewport" content="width=device-width"/>
