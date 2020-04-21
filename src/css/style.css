@@ -1,49 +1,41 @@
-/*! purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/*! purgecss end ignore */
 @tailwind utilities;
 
-@import url('https://rsms.me/inter/inter.css');
-
-html { font-family: 'Inter', sans-serif; }
-
-body {
-  @apply  text-gray-800 bg-orange-100;
+h1 {
+  @apply text-4xl text-blue-700;
 }
-/* Headers */
 
-h1,
-h2
-{
-  @apply text-2xl  font-bold;
+h2 {
+  @apply text-3xl text-blue-700;
 }
 h3 {
-  @apply text-xl  font-bold mb-0;
-}
-h4,
-h5,
-h6
-{
-  @apply text-lg  font-bold;
-}
-.small
-{
-  @apply text-xs mb-2 ;
+  @apply text-2xl text-blue-700;
 }
 
-/* Links */
-a {
-  @apply text-pink-800;
+h4 {
+  @apply text-xl text-blue-700;
 }
+
+h5 {
+  @apply text-xl text-blue-600;;
+}
+
+
+a {
+  @apply text-pink-700;
+}
+
 a:hover {
   @apply underline;
 }
 /* Paragraph */
 p {
-  @apply mb-2;
+  @apply mb-2 text-xl
 }
 
-
-/* purgecss end ignore */
+.small
+{
+  @apply text-xs mb-2 ;
+}
 

@@ -24,11 +24,8 @@ const Layout = ({ location, title, children }) => {
       </h3>
     )
   }
-  return (
-    
+  return (    
     <div className="flex flex-col pt-4 px-3 lg:px-64 lg:pt-10">
-         
-    
       <header>{header}</header>
       <main>{children}</main>
       <footer>

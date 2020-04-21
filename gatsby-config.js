@@ -70,12 +70,12 @@ module.exports = {
         icon: `content/assets/gnair.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true
-      }
-    },
+  //  {
+  //    resolve: `gatsby-plugin-purgecss`,
+  //    options: {
+  //      tailwind: true
+  //    }
+  //  },
     `gatsby-plugin-react-helmet`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
