@@ -62,7 +62,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Blog - Gopakumar Nair`,
-        short_name: `DisconnectedDots`,
+        short_name: `Disconnected Dots`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
