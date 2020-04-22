@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+body {
+  @apply antialiased bg-gray-100 text-gray-900
+}
 
 h1 {
   @apply text-4xl text-blue-700;
@@ -39,3 +42,4 @@ p {
   @apply text-xs pt-0 mt-0 ;
 }
 
+@tailwind utilities;
